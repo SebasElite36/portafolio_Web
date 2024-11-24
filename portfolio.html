@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <h1>Mi Portafolio</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container mt-5">
+        <h2>Proyectos</h2>
+        <div class="mb-4">
+            <button class="btn btn-primary filter-btn" data-category="all">Todo</button>
+            <button class="btn btn-primary filter-btn" data-category="web">Web</button>
+            <button class="btn btn-primary filter-btn" data-category="personal">Personal</button>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4 project-card" data-category="personal">
+                <div class="card">
+                    <img src="css/img/proyecto1.jpg" class="card-img-top" alt="Proyecto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Gestión de Notas</h5>
+                        <p class="card-text">Una aplicación para gestionar notas académicas y calcular lo necesario para aprobar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 project-card" data-category="web">
+                <div class="card">
+                    <img src="css/img/proyecto2.jpg" class="card-img-top" alt="Proyecto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Página Web</h5>
+                        <p class="card-text">Una página web solicitada por una multinacional.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 project-card" data-category="web">
+                <div class="card">
+                    <img src="css/img/eco.webp" class="card-img-top" alt="Proyecto 4">
+                    <div class="card-body">
+                        <h5 class="card-title">E-Commerce</h5>
+                        <p class="card-text">Un sitio web para comercio electrónico con pasarela de pagos integrada.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 project-card" data-category="personal">
+                <div class="card">
+                    <img src="css/img/proyecto3.jpg" class="card-img-top" alt="Proyecto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Gestión de Inventario</h5>
+                        <p class="card-text">Un software para gestionar inventarios en una empresa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 project-card" data-category="web">
+                <div class="card">
+                    <img src="css/img/blog.webp" class="card-img-top" alt="Proyecto 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Personal</h5>
+                        <p class="card-text">Un blog diseñado para compartir experiencias y aprendizajes de programación.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 project-card" data-category="personal">
+                <div class="card">
+                    <img src="css/img/pcma.png" class="card-img-top" alt="Proyecto 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Pc Manager</h5>
+                        <p class="card-text">Una aplicación para optimizar el equipo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; Sebastián Mendoza - Todos los derechos reservados</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
