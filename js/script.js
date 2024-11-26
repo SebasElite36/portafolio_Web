@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     typeEffect();
 });
-
-document.querySelectorAll('.nav-link').forEach(link => {
+// navegacion entre paginas
+document.querySelectorAll('.nav-link').forEach(link => { 
     link.addEventListener('click', function (e) {
         e.preventDefault(); 
         const targetPage = this.getAttribute('href'); 
@@ -43,7 +43,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-
+// animacion de imagenes del portafolio
 const cards = document.querySelectorAll('.card');
 cards.forEach(card => {
     card.addEventListener('mouseenter', () => {
@@ -73,7 +73,7 @@ if (form) {
         }
     });
 }
-
+//filtrado del portafolio
 document.querySelectorAll('.filter-btn').forEach(button => {
     button.addEventListener('click', () => {
         const category = button.getAttribute('data-category');
